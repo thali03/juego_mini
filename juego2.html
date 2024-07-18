@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Preguntas Matemáticas</title>
+    <link rel="stylesheet" href="juego2.css">
+</head>
+<body>
+    <div class="container">
+        <div id="start-screen">
+            <h1 class="title">Bienvenido al Juego de Preguntas Matemáticas</h1>
+            <button id="start-Game" onclick="startGame()">Comenzar</button>
+        </div>
+        <div id="game" style="display: none;">
+
+            <div class="question" id="question">Pregunta</div>
+
+            <div class="images" id="images"></div>
+
+            <input type="number" id="answer" placeholder="Escribe tu respuesta">
+            <br>
+            <button id="check-answer" onclick="checkAnswer()">Responder</button>
+
+            <div class="status" id="status"></div>
+            <div class="timer" id="timer"></div>
+        <div id="final-screen" style="display: none;">
+            <h1>Juego Terminado</h1>
+            <p id="result">Tu puntaje es: 0 de 0</p>
+            <button onclick="startGame()">Intentar de nuevo</button>
+        </div>
+    </div>
+    <script src="juego2.js"></script>
+</body>
+</html>

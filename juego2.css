@@ -1,0 +1,230 @@
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('fondo.gif'); /* Ruta de tu imagen de fondo */
+  background-size: cover; /* Ajustar tamaño para cubrir toda la pantalla */
+  background-position: center; /* Centrar la imagen */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+  background-color: rgba(206, 28, 212, 0.979); /* Color de fondo del contenedor principal */
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 600px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+.question {
+  text-align: center ;
+  background-color: rgba(236, 144, 5, 0.685); /* Color de fondo del contenedor principal */
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 600px;
+}
+.title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #ff5733; /* Cambiar el color según tu preferencia */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra del texto */
+  animation: shake 0.5s ease-in-out infinite alternate; /* Animación solo para el título */
+}
+
+.button {
+  padding: 10px 20px;
+  font-size: 18px;
+  font-family: Arial, sans-serif; /* Tipo de letra Arial */
+  background-color: #007bff; /* Fondo azul */
+  color: #000; /* Texto negro */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #45a049; /* Cambia el color al pasar el mouse */
+}
+
+.question {
+  font-size: 24px; /* Tamaño de fuente para las preguntas */
+  margin-bottom: 10px; /* Espacio inferior entre la pregunta y las imágenes */
+}
+
+.images {
+  display: flex;
+  flex-wrap: wrap; /* Permitir envoltura de las imágenes en varias líneas */
+  justify-content: center; /* Centrar las imágenes horizontalmente */
+}
+
+.images img {
+  max-width: 100px; /* Tamaño máximo de las imágenes */
+  height: auto; /* Altura automática para mantener la proporción */
+  margin: 5px; /* Margen entre las imágenes */
+}
+
+@keyframes shake {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-10px); }
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 600px;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #ff5733; /* Cambiar el color según tu preferencia */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra del texto */
+  animation: shake 0.5s ease-in-out infinite alternate; /* Animación solo para el título */
+}
+
+.button {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #4CAF50; /* Color de fondo del botón */
+  color: white; /* Color del texto del botón */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #45a049; /* Cambia el color al pasar el mouse */
+}
+
+.question {
+  font-size: 24px; /* Tamaño de fuente para las preguntas */
+  margin-bottom: 10px; /* Espacio inferior entre la pregunta y las imágenes */
+}
+
+.images {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px; /* Espacio inferior entre las imágenes y la entrada de respuesta */
+}
+
+.images img {
+  max-width: 100px; /* Tamaño máximo de las imágenes */
+  height: auto; /* Altura automática para mantener la proporción */
+}
+
+@keyframes shake {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-10px); }
+}
+.timer {
+  position: absolute;
+  top: 20px; /* Ajusta según la posición vertical deseada */
+  right: 20px; /* Ajusta según la posición horizontal deseada */
+  font-size: 20px; /* Tamaño del texto del temporizador */
+  font-family: Arial, sans-serif; /* Fuente del texto */
+  color: #333; /* Color del texto */
+  background-color: #f0f0f0; /* Color de fondo del temporizador */
+  padding: 10px; /* Espacio interior alrededor del temporizador */
+  border-radius: 5px; /* Borde redondeado */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+#check-answer {
+  margin-top: 20px; /* Espacio superior para separar del temporizador */
+  font-size: 18px; /* Tamaño de fuente más grande */
+  font-family: Arial, sans-serif; /* Tipo de letra */
+  background-color: #ff0000; /* Fondo rojo */
+  color: white; /* Texto blanco */
+  padding: 10px 20px; /* Relleno interno para hacer el botón más grande */
+  border: none; /* Quitar borde */
+  border-radius: 5px; /* Borde redondeado */
+  cursor: pointer; /* Cursor indicando que es interactuable */
+  transition: background-color 0.3s ease; /* Transición suave para el color de fondo */
+}
+
+#check-answer:hover {
+  background-color: #e23939; /* Color de fondo más oscuro al pasar el mouse */
+}
+#start-Game {
+  margin-top: 20px; /* Espacio superior para separar del temporizador */
+  font-size: 18px; /* Tamaño de fuente más grande */
+  font-family: Arial, sans-serif; /* Tipo de letra */
+  background-color: #51cedfe8; /* Fondo rojo */
+  color: rgb(9, 16, 19); /* Texto blanco */
+  padding: 10px 20px; /* Relleno interno para hacer el botón más grande */
+  border: none; /* Quitar borde */
+  border-radius: 5px; /* Borde redondeado */
+  cursor: pointer; /* Cursor indicando que es interactuable */
+  transition: background-color 0.3s ease; /* Transición suave para el color de fondo */
+}
+
+#start-Game:hover {
+  background-color: #44c1eb; /* Color de fondo más oscuro al pasar el mouse */
+}
+#answer {
+  margin-top: 20px; /* Espacio superior para separar del temporizador */
+  font-size: 18px; /* Tamaño de fuente más grande */
+  font-family: Arial, sans-serif; /* Tipo de letra */
+  background-color: #b9d4d8e8; /* Fondo rojo */
+  color: rgb(9, 16, 19); /* Texto blanco */
+  padding: 10px 20px; /* Relleno interno para hacer el botón más grande */
+  border: none; /* Quitar borde */
+  border-radius: 5px; /* Borde redondeado */
+  cursor: pointer; /* Cursor indicando que es interactuable */
+  transition: background-color 0.3s ease; /* Transición suave para el color de fondo */
+}
+
+#answer:hover {
+  background-color: #44c1eb; /* Color de fondo más oscuro al pasar el mouse */
+}
+#final-screen {
+  text-align: center; /* Centrar contenido */
+  margin-top: 50px; /* Margen superior */
+  padding: 20px; /* Espaciado interno */
+  background-color: #f2f2f2; /* Color de fondo */
+  border: 2px solid #ccc; /* Borde */
+  width: 80%; /* Ancho del contenedor */
+  max-width: 600px; /* Ancho máximo */
+  margin: 0 auto; /* Centrar horizontalmente */
+}
+
+#final-screen h1 {
+  color: #333; /* Color del título */
+  font-size: 2em; /* Tamaño de fuente del título */
+}
+
+#final-screen p {
+  font-size: 1.2em; /* Tamaño de fuente del texto del puntaje */
+  margin-bottom: 20px; /* Margen inferior */
+}
+
+#final-screen button {
+  padding: 10px 20px; /* Padding del botón */
+  background-color: #ff6347; /* Color de fondo del botón (rojo) */
+  color: #fff; /* Color del texto del botón */
+  border: none; /* Sin borde */
+  cursor: pointer; /* Cursor de puntero */
+  font-size: 1em; /* Tamaño de fuente */
+}
+
+#final-screen button:hover {
+  background-color: #cc4731; /* Cambio de color de fondo al pasar el ratón */
+}
